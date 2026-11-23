@@ -1,9 +1,9 @@
 --Создание енамчиков для удобства
-CREATE TYPE title_types AS ENUM ('anime', 'film', 'serial', 'cartoon');
-CREATE TYPE title_release_status AS ENUM ('finished', 'continues', 'waiting for release');
-CREATE TYPE viewing_status AS ENUM ('postponed', 'watching now', 'will be watching');
-CREATE TYPE viewing_mode AS ENUM ('background', 'full immersion', 'partial immersion');
-CREATE TYPE relation_types AS ENUM ('sequel', 'prequel', 'spin-off', 'crossover', 'remake', 'OVA', 'ONA');
+CREATE TYPE title_types AS ENUM ('Аниме', 'Фильм', 'Сериал', 'Мультик', 'Шоу');
+CREATE TYPE title_release_status AS ENUM ('Продолжается', 'Закончилось', 'Еще не вышло');
+CREATE TYPE viewing_status AS ENUM ('Смотрю', 'Просмотрено', 'Отложено', 'Брошено');
+CREATE TYPE viewing_mode AS ENUM ('На фоне', 'Полное погружение', 'В спокойной обстановке');
+CREATE TYPE relation_types AS ENUM ('Сиквел', 'Приквел', 'Спин-офф', 'Кроссовер', 'Ремейк', 'OVA', 'ONA');
 
 --табица с тайтлами
 CREATE TABLE titles (
