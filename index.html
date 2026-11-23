@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link>
+    <link rel="stylesheet" href="css/style.css">
     <title>media-base</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            
+            <img src="images/logo.png" alt="Логотип сайта" class="logo-image">
         </div>
         <nav>
             <a href="#">Главная</a>
-            <a href="#">Иное</a>
+            <a href="#">Медиа База</a>
+            <a href="#"></a>
         </nav>
         <search>
             <form>
@@ -24,7 +25,33 @@
     <main class="layout">
         <aside class="sidebar">
             <selection class="filter-group">
-                <h3>Статус</h3>
+              <h4>Тип тайтла</h4>
+                <label class="check-box"><input type="checkbox"><span class="check">Аниме</span></label>
+                <label class="check-box"><input   type="checkbox"><span class="check">Фильм</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Сериал</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Шоу</span></label>
+            </selection>
+            <selection class="filter-group">
+                <h4>Статус</h4>
+                <label class="check-box"><input type="radio" name="status"><span class="check">Все</span></label>
+                <label class="check-box"><input type="radio" name="status"><span class="check">Смотрю</span></label>
+                <label class="check-box"><input type="radio" name="status"><span class="check">Просмотрено</span></label>
+                <label class="check-box"><input type="radio" name="status"><span class="check">Отложено</span></label>
+                <label class="check-box"><input type="radio" name="status"><span class="check">Брошено</span></label>
+            </selection>
+            <selection class="filter-group">
+                <h4>Жанры</h4>
+                <label class="check-box"><input type="checkbox"><span class="check">Экшен</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Романтика</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Комедия</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Драма</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Фэнтези</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Повседневность</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Меха</span></label>
+                <label class="check-box"><input type="checkbox"><span class="check">Триллер</span></label>
+            </selection>
+            <selection class="filter-group">
+                <h4>Расширенные критерии</h4>
                 
             </selection>
         </aside>
